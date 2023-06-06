@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "eLearn Calendar Connector",
+  "version": "1.0",
+  "description": "Connect your eLearn Deadlines to your Calendar",
+  "icons": {
+    "48": "icons/logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.elearn.capu.ca/*"
+      ],
+      "js": [
+        "lib/tools.js",
+        "script.js"
+
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
